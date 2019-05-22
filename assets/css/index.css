@@ -1,0 +1,275 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	min-width: 1000px;
+	background-image: url("../images/bg.jpg");
+	font-family:Microsoft JhengHei;
+}	
+.bg
+{
+	width: 900px;
+	height: 1000px;
+	background-color: white;
+	margin: 30px auto;
+}
+.headline
+{
+	float: right;
+	font-size: 50px;
+	font-family:fantasy;
+	color: #696969;
+}
+.per_capital 
+{
+  	background-color: transparent;
+  	width: 250px;
+  	height: 350px;
+  	perspective: 1000px;
+  	margin: 60px;
+  	float: left;
+}
+.per_capital-inner 
+{
+  	position: relative;
+  	width: 250px;
+  	height: 350px;
+  	transition: transform 1s;
+  	transform-style: preserve-3d;
+}
+.per_capital:hover .per_capital-inner 
+{
+  	transform: rotateY(180deg);
+}
+
+.per_capital-front, .per_capital-back 
+{
+  	position: absolute;
+  	width: 250px;
+  	height: 350px;
+  	backface-visibility: hidden;
+  	border-radius: 1em;
+}
+.per_capital-front 
+{
+  	background-color: #bbb;
+  	color: black; 	
+}
+.per_capital-back 
+{
+  	background-color: #696969;
+  	color: white;
+  	transform: rotateY(180deg);
+  	height: 300px;
+}
+.per_img
+{
+	width:180px;
+	border-radius:999em;
+	margin: 10px 33px;
+}
+.per_word
+{
+	font-size: 17px;
+	font-family:Microsoft JhengHei, sans-serif;
+	text-align: center;
+}
+.wordl
+{
+	font-size: 25px;
+}
+.per_icon
+{
+	width: 50px;
+	margin: 4.3px;
+}
+.tip 
+{
+  	position: relative;
+  	display: inline-block;
+}
+.tip .tiptext 
+{
+  	visibility: hidden;
+  	width: 120px;
+  	background-color: #555;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px 0;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 125%;
+  	left: 50%;
+  	margin-left: -60px;
+  	opacity: 0;
+  	transition: opacity 0.3s;
+}
+.tip .tiptext::after 
+{
+  	content: "";
+  	position: absolute;
+  	top: 100%;
+  	left: 50%;
+  	margin-left: -5px;
+  	border-width: 5px;
+  	border-style: solid;
+  	border-color: #555 transparent transparent transparent;
+}
+.tip:hover .tiptext 
+{
+  	visibility: visible;
+  	opacity: 1;
+}
+.btn 
+{
+  	border: 2px solid white;
+  	background-color: #888888;
+  	color: white;
+  	padding: 10px ;
+  	font-size: 17px;
+  	font-weight:bold;
+  	cursor: pointer;
+  	margin: 20px 19px 5px 19px;
+  	opacity: 0.6;
+  	border-radius: 20px;
+}
+.btn:hover
+{
+  	opacity: 1;
+}
+.nameimg
+{
+	float: left;
+	width: 190px;
+	height: 100px;
+}
+.pro_skill
+{
+	width: 500px;
+	float: right;
+}
+.accordion 
+{
+  	background-color: #eee;
+  	color: #444;
+  	cursor: pointer;
+  	padding: 18px;
+  	width: 300px;
+  	border: none;
+  	text-align: left;
+  	outline: none;
+  	font-size: 15px;
+ 	 transition: 0.4s;
+}
+.active, .accordion:hover 
+{
+  	background-color: #ccc; 
+}
+
+.panel 
+{
+  	padding: 0 18px;
+  	display: none;
+  	background-color: white;
+ 	 overflow: hidden;
+}
+.my_project
+{
+	clear: both;
+}
+table 
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 450px;
+  border: 1px solid #ddd;
+}
+th, td 
+{
+  text-align: center;
+  padding: 10px;
+}
+
+th:first-child, td:first-child 
+{
+  text-align: left;
+}
+
+tr:nth-child(even) 
+{
+  background-color: #f2f2f2
+}
+.fa-check 
+{
+  color: green;
+}
+.fa-remove 
+{
+  color: red;
+}
+.pub_program 
+{
+  width: 100%;
+  background-color: #ddd;
+}
+.skill 
+{
+  text-align: right;
+  padding: 2px;
+  color: white;
+}
+.html 
+{
+  width: 85%; 
+  background-color: #2E8B57;
+}
+.css 
+{
+  width: 70%; 
+  background-color: #00BBFF;
+}
+.js 
+{
+  width: 40%; 
+  background-color: #FF8888;
+}
+.python 
+{
+  width: 55%; 
+  background-color: #FFCC22;
+}
+.c 
+{
+  width: 50%; 
+  background-color: #FFCC22;
+}
+.net 
+{
+  width: 78%; 
+  background-color: #00BBFF;
+}
+.java 
+{
+  width: 72%; 
+  background-color: #00BBFF;
+}
+.sql 
+{
+  width: 40%; 
+  background-color: #FF8888;
+}
+.volunteer
+{
+  width: 200px;
+}
+.club
+{
+  float: left;
+  font-size: 18px;
+  padding: 9px;
+}
+#clubimg
+{
+  width: 280px;
+}
